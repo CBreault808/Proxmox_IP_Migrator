@@ -23,6 +23,6 @@ This tool is designed to complement my homelab theme of a Star Wars Imperial Fle
 * Local system mail forwarder (`msmtp` or `ssmtp`) integrated with a secure App Password on a target Google/Gmail account.
 
 ## Modules Overview
-This tool is divided into modules for ease of troubleshooting and customization. Each script is self-contained for the moment. Once all modules are refined and working correctly, a Master Script will be added that can oversee the entire process and call all the different functions. 
+This tool is divided into modules for ease of troubleshooting and customization. Each module is self-contained for the moment. Once all modules are refined and working correctly, a Master Script will be added that can oversee the entire process and call all the different functions. 
 * **First Module:** `coordinate_gen.sh` This script is designed to randomly generate classic Star Wars galactic regions along with random sector grids. This will be tied to the notification and JSON modules to generate emails.
 * **Second Module:** `ip_tracker.sh` This script is designed to read and capture the Proxmox host IP address and store it in a file for reference. If the host IP address changes, the script will echo the new IP address to overwrite the address on the file and then echo a notification of status change.
